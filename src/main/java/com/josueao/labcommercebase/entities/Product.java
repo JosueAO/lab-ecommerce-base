@@ -91,4 +91,9 @@ public class Product {
     public List<Order> getOrders() {
         return items.stream().map(x -> x.getOrder()).toList();
     }
+
+    @Override
+    public String toString() {
+        return this.name;
+    }
 }
