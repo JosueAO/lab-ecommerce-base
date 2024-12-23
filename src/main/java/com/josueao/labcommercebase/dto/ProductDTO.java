@@ -2,8 +2,6 @@ package com.josueao.labcommercebase.dto;
 
 import com.josueao.labcommercebase.entities.Product;
 
-import java.security.PublicKey;
-
 public class ProductDTO {
 
     private Long id;
@@ -11,6 +9,9 @@ public class ProductDTO {
     private String description;
     private Double price;
     private String imgUrl;
+
+    public ProductDTO() { // No momento somente para: Jackson(lib para serializar e desserializar JSON). O Jackson precisa de um construtor sem argumento OU ANOTAÇÃO especifica para desserializar o JSON.
+    }
 
     public ProductDTO(Long id, String name, String description, Double price, String imgUrl) {
         this.id = id;

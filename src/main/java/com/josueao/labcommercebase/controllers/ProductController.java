@@ -19,7 +19,7 @@ import java.util.Optional;
 public class ProductController {
 
     @Autowired
-    private ProductService service;
+    private ProductService service; // 996213374
 
     @GetMapping(value = "/{id}")
     public ResponseEntity<ProductDTO> findById(@PathVariable Long id) {
